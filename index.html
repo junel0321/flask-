@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Name List</title>
+</head>
+<body>
+    <h1>Name List</h1>
+    
+    <form method="POST">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Entered Names:</h2>
+    <ul>
+        {% for name in name_list %}
+            <li>{{ name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
